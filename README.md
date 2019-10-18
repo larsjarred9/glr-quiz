@@ -28,3 +28,34 @@ Een project van 4 lesweken (Regio Rotterdam)
 * Er moet een score worden gedisplayed & de docent moet zelf kunnen kiezen hoeveel punten 1 vraag is
 * Er moet een progress bar worden laten zien
 * Mogenlijkheid tot plaatjes
+
+
+# Huistijl Website
+
+* Tekstkleur: #000000
+* Actiekleur: #8FE507
+
+* Headings: 
+  Caecilia LT Std
+  85 heavy
+  Korps: 42 pt
+  interlinie: 51 pt
+  Kleur: #343937
+  Kapitalen
+
+* Sub-Headings
+  Caecilia LT Std
+  85 heavy
+  Korps 18pt
+  Kleur: #343937
+
+* Paragraaf tekst:
+  Verdana
+  Korps: 12pt
+  Kleur: #343937
+  Linkslijnend
+  tekst: Verdana
+  korps: 12pt
+  
+ * Achtergrond-kleur:
+   #8FE507
