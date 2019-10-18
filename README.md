@@ -23,4 +23,6 @@
 * GLR Kleuren & Huisstijl
 * Chrome / Safari
 * Hoeft geen mobile support
+* Er moet een score worden gedisplayed & de docent moet zelf kunnen kiezen hoeveel punten 1 vraag is
+* Er moet een progress bar worden laten zien
 * Mogenlijkheid tot plaatjes
