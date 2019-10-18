@@ -1,5 +1,5 @@
 ## Beroeps 1 Quiz
-Een project van 4 lesweken weken (Regio Rotterdam)
+Een project van 4 lesweken (Regio Rotterdam)
 
 
 # Vragen
