@@ -18,11 +18,11 @@
       correctAnswer: 'a' },
     
       {
-        question: document.write = "What is 30/3?",
+        question: document.write = "Wat was de eerste video game?",
         answers: {
-          a: '3',
-          b: '5',
-          c: '10' },
+          a: 'Pong',
+          b: 'Space War',
+          c: 'Tik-Tak-Toe' },
       
         correctAnswer: 'c' }];
     
@@ -105,16 +105,17 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     // show number of correct answers out of total
     window.CP.exitedLoop(1);
-    window.alert ("Je hebt een score van " + numCorrect + ' uit de ' + questions.length);
+    window.alert("Je hebt een score van " + numCorrect + ' uit de ' + questions.length);
+    setTimeout(verplaatsen, 3000)
   }
 
   // show questions right away
   showQuestions(questions, quizContainer);
   
   // on submit, show results
-  submitButton.onclick = function(){
+  submitButton.onclick= function(){
     showResults(questions, quizContainer, resultsContainer);
-    window.location.href = "https://www.glr.nl/";
+    verplaatsen = window.location.href = "https://www.glr.nl/";
     //Zet later er nog bij dat we misschien een website kunnen linken, zodat de quiz niet eeuwig bekeken kan worden.
     //Voor nu zetten we de default page redirect door naar de glr website (kopieer dit: window.location.href = "https://www.glr.nl/";).
     //LATER MOETEN WE INPLAATS VAN WINDOW.LOCATION.HREF = "" NAAR WINDOW.LOCATION.REPLACE VERANDEREN ZODAT STUDENTEN NIET MEER TERUG KUNNEN NAAR DE PAGINA
@@ -122,4 +123,4 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     //bezoek de andere scripts in het html document
   }
 }
-          //# sourceURL=pen.js //kan nog steeds geen setTimeout toevoegen bij bepaalde functies
+//# sourceURL=pen.js                 (Geïnspireerde codes) //LET OP kan nog steeds geen setTimeout toevoegen bij bepaalde functies
