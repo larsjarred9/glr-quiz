@@ -122,4 +122,4 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     //bezoek de andere scripts in het html document
   }
 }
-          //# sourceURL=pen.js
+          //# sourceURL=pen.js //kan nog steeds geen setTimeout toevoegen bij bepaalde functies
