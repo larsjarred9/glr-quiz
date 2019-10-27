@@ -119,6 +119,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     //Voor nu zetten we de default page redirect door naar de glr website (kopieer dit: window.location.href = "https://www.glr.nl/";).
     //LATER MOETEN WE INPLAATS VAN WINDOW.LOCATION.HREF = "" NAAR WINDOW.LOCATION.REPLACE VERANDEREN ZODAT STUDENTEN NIET MEER TERUG KUNNEN NAAR DE PAGINA
     //OF WE VERZINNEN WEL IETS ANDERS (Dont worry about this text if your are a customer.)
+    //bezoek de andere scripts in het html document
   }
 }
           //# sourceURL=pen.js
