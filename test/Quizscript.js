@@ -25,9 +25,23 @@
           c: 'Tik-Tak-Toe' },
       
         correctAnswer: 'c' }];
-    
-    
+    //You can change the code above. Just copy one of the examples to add a question and edit the question and the Answer.
     //if you are a customer using this programm. Do not edit this code except for the code above!
+
+      function randomQuestion{ Math.floor(Math.random)() * (myQuestions.length));
+      document.getElementById('questions').innerHTML = questions;
+      myQuestions.splice(randomQuestion, 1);}
+      
+      var timer = new Timer();
+      timer.start({countdown: true, startValues: {seconds: 30}});
+      $('#countdownExample .values').html(timer.getTimeValues().toString());
+      timer.addEventListener('secondsUpdated', function (e) {
+          $('#countdownExample .values').html(timer.getTimeValues().toString());
+      });
+      timer.addEventListener('targetAchieved', function (e) {
+          $('#countdownExample .values').html('KABOOM!!');
+      });
+      
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -44,7 +58,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     // for each question...
     for(var i=0; i<questions.length; i++){if (window.CP.shouldStopExecution(0)) break;
       
-      // first reset the list of answers
+      // first reset the list of answers. this will reset al of the questions at the beggining of the programm
       answers = [];
 
       // for each available answer...

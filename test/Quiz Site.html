@@ -42,14 +42,22 @@
     <body translate="no">
   <a href="https://www.glr.nl/"><img src="GLRlogo_RGB.jpg" width="100" height="100"></a>
   <br>
+  <div id="countdownExample">
+      <div class="values"></div>
+  </div>
     <div id="quiz"><div class="question"></div><div class="answers"><label><input type="radio" name="question0" value="a">a: </label><label><input type="radio" name="question0" value="b">b: </label><label><input type="radio" name="question0" value="c">c: </label></div><div class="question"></div><div class="answers"><label><input type="radio" name="question1" value="a">a: </label><label><input type="radio" name="question1" value="b">b: </label><label><input type="radio" name="question1" value="c">c: </label></div></div>
-    <button id="submit">Get Results</button>
+    <button id="submit">Opdracht Inleveren</button>
     <div id="results"></div>
     <a href="https://simplestepscode.com/javascript-quiz-tutorial/" target="_blank" style="text-decoration: none;">Hier is de inspiratie van onze broncode.</a>
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
     <script id="rendered-js" src="Quizscript.js">
    </script>
     <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
-    <p>Deze code is gecreerd door Pjotr, Tayab, Lars, David ©2019 GLR</p>
+    <script>
+    var randomQuestion = Math.floor(Math.random)() * (myQuestions.length);
+    document.getElementById('questions').innerHTML = questions;
+    myQuestions.splice(randomQuestion, 1);
     
+</script>
+    <p>Deze code is gecreerd door Pjotr, Tayab, Lars, David ©2019 GLR</p>
     </body></html>

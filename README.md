@@ -6,7 +6,7 @@ Een project van 4 lesweken (Regio Rotterdam)
 
 *	Wat is het onderwerp?
 *	Moet de quiz tijdgebonden zijn?
-*	Moet de klant de vragen zelf kunnen aanmaken? (Indien niet welke vragen)
+*	Moet de kaanmakelant de vragen zelf kunnen? (Indien niet welke vragen)
 *	Moet de quiz meerkeuze zijn of open of beiden?
 *	Moet er een Progressbar zijn?
 *	Hoe moet de Score op het scherm gepresenteerd worden?
@@ -18,7 +18,7 @@ Een project van 4 lesweken (Regio Rotterdam)
 # Eisen
 
 * HTML, CSS
-* Meerkeuzen Vragen
+* Meerkeuze Vragen
 * Maximaal 15 minuten om alle vragen te beantwoorden
 * Zelf invoerbare vragen (Via JS bestand)
 * Vragen moeten gerandomised worden kwa volgorde

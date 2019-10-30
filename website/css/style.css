@@ -1,0 +1,68 @@
+body{
+    background-color: #f8f8f8 !important; /* verander background color */
+  }
+
+.box-vraag {
+    background-color: #8FE507;
+    margin: 0 auto;
+    height: 6vh;
+    text-align: center;
+    margin-top: 3vh;
+    width: 75%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 25px;
+}
+
+.box-formulier {
+    background-color: #fff;
+    margin: 0 auto;
+    height: 50vh;
+    margin-top: 3vh;
+    width: 75%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 25px;
+}
+.vraag-content {
+    padding: 0 auto;
+    padding-top: 5px;
+
+}
+form {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+
+}
+.vraag-content h2{ /* verandert het font van de vraag */
+    font-weight: normal;
+    color: #000000;
+    font-family: 'Caecilia LT Std 85 Heavy', sans-serif;
+}
+/* alle code die geen betrekking heeft tot de homepage */
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
+
+#Inleveren{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #297;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#Inleveren:hover{
+    background-color: #3a8;
+}
