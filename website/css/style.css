@@ -33,6 +33,11 @@ form {
     padding-top: 10px;
 
 }
+
+form label {
+    font-family: 'Caecilia LT Std 55 Roman', sans-serif;
+    color: #000000;
+}
 .vraag-content h2{ /* verandert het font van de vraag */
     font-weight: normal;
     color: #000000;
@@ -44,6 +49,12 @@ form {
     width: 100%;
     background-color: grey;
 
+}
+
+.btn-glr {
+    color: #fff;
+    background-color: #8FE507 !important;
+    border-color: #8FE507 !important;
 }
 
 #myBar {
