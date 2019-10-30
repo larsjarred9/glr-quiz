@@ -31,21 +31,22 @@
       function randomQuestion(){ Math.floor(Math.random)() * (myQuestions.length));
       document.getElementById('questions').innerHTML = myQuestions;
       myQuestions.splice(randomQuestion, 1);}
-      
-      var timer = new Timer();
-      timer.start({countdown: true, startValues: {seconds: 30}});
-      $('#countdownExample .values').html(timer.getTimeValues().toString());
-      timer.addEventListener('secondsUpdated', function (e) {
-          $('#countdownExample .values').html(timer.getTimeValues().toString());
-      });
-      timer.addEventListener('targetAchieved', function (e) {
-          $('#countdownExample .values').html('KABOOM!!');
-      });
+
+      //Later hallen we de (//) weg maar nu is de code nog niet zo goed aan het functioneren
+      // var timer = new Timer();
+      //timer.start({countdown: true, startValues: {seconds: 30}});
+      //$('#countdownExample .values').html(timer.getTimeValues().toString());
+      //timer.addEventListener('secondsUpdated', function (e) {
+      //  $('#countdownExample .values').html(timer.getTimeValues().toString());
+      //});
+      //timer.addEventListener('targetAchieved', function (e) {
+          //$('#countdownExample .values').html('KABOOM!!');
+      //});
 
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
-setTimeout(myTimer, 4000)
+setTimeout(myTimer, 2400000)
 function myTimer() {
   alert("De quiz wordt nu op stop gezet")
 }
