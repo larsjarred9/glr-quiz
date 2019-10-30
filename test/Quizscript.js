@@ -41,10 +41,14 @@
       timer.addEventListener('targetAchieved', function (e) {
           $('#countdownExample .values').html('KABOOM!!');
       });
-      
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
+setTimeout(myTimer, 4000)
+function myTimer() {
+  alert("De quiz wordt nu op stop gezet")
+}
 
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
@@ -130,6 +134,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
   submitButton.onclick= function(){
     showResults(questions, quizContainer, resultsContainer);
     verplaatsen = window.location.href = "https://www.glr.nl/";
+    clearTimeout(myTimer);
     //Zet later er nog bij dat we misschien een website kunnen linken, zodat de quiz niet eeuwig bekeken kan worden.
     //Voor nu zetten we de default page redirect door naar de glr website (kopieer dit: window.location.href = "https://www.glr.nl/";).
     //LATER MOETEN WE INPLAATS VAN WINDOW.LOCATION.HREF = "" NAAR WINDOW.LOCATION.REPLACE VERANDEREN ZODAT STUDENTEN NIET MEER TERUG KUNNEN NAAR DE PAGINA

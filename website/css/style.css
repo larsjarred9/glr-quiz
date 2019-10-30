@@ -5,7 +5,7 @@ body{
 .box-vraag {
     background-color: #8FE507;
     margin: 0 auto;
-    height: 6vh;
+    min-height: 50px;
     text-align: center;
     margin-top: 3vh;
     width: 75%;
@@ -16,8 +16,8 @@ body{
 .box-formulier {
     background-color: #fff;
     margin: 0 auto;
-    height: 50vh;
-    margin-top: 3vh;
+    margin-top: 40px;
+    min-height: 450px;
     width: 75%;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     border-radius: 25px;
