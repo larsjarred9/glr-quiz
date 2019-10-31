@@ -5,9 +5,9 @@
         href="https://1190327580.rsc.cdn77.org/sites/bd_glr_nl/themes/glr//favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/a900db2b0a40910b1f584fbed5e438e8?family=Caecilia+LT+Std" rel="stylesheet"
-        type="text/css" />
+        type="text/css" /> -->
     <title>Grafisch Lyceum Rotterdam - Quizes</title>
 </head>
 
@@ -23,42 +23,12 @@
         </div>
         <div class="box-formulier">
             <div class="formulier-content"></div>
-            <form>
-                <div class="form-row">
-                    <div class="col">
-                        <label for="Voornaam">Voornaam</label>
-                        <input type="text" required class="form-control" id="Voornaam" placeholder="Voornaam">
-                    </div>
-                    <div class="col">
-                        <label for="Achternaam">Achternaam</label>
-                        <input type="text" required class="form-control" id="Achternaam" placeholder="Achternaam">
-                    </div>
+                <div class="container">
+                    <div id="quiz"></div>
+                    <div class="button" id="next"><a href="#">Next</a></div>
+                    <div class="button" id="prev"><a href="#">Prev</a></div> 
                 </div>
-                <br>
-                <div class="form-row">
-                    <div class="col">
-                        <label for="Studentnummer">Studentnummer</label>
-                        <input type="text" required class="form-control" id="Studentnummer" placeholder="Studentnummer">
-                    </div>
-                    <div class="col">
-                        <label for="Klas">Klas</label>
-                        <input type="text" required class="form-control" id="Klas" placeholder="Klas">
-                    </div>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="Email">Studenten Email Address</label>
-                    <input type="email" required class="form-control" id="Email" placeholder="nummer@glr.nl">
-                </div>
-                <hr>
-                <div class="form-group">
-                    <input type="checkbox" required name="Concent" value="concent"> Ik geef hierbij toestemming dat mijn data gebruikt mag worden voor de verwerking van deze quiz.
-                </div>
-                <br>
-                <div class="form-group">
-                    <input class="btn btn-glr" required type="submit" value="Start Quiz">
-                </div>
-            </form>
+            </div>
         </div>
     </div>
     <!--<br>
@@ -68,6 +38,8 @@
             </div>
             <button id="Inleveren">Opdracht Inleveren</button>-->
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="js/quiz.js"></script>
 </body>
 
 </html>
