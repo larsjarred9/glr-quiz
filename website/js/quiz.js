@@ -1,4 +1,4 @@
-(function() //creates the questions
+(function() //creates the questions and the entire quiz
  {
   var allQuestions = [{
     question: "The tree sends downroots from its branches to the soil is know as:",
@@ -41,6 +41,8 @@
     options: ["Graphite", "Silica", "Iron Oxide", "Diamond"],
     answer: 0
     }];
+ //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
+ //Then start with a new {} and type your question, options and answers there
   //set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
   var quesCounter = 0;
   var selectOptions = [];
@@ -62,7 +64,7 @@
           nextQuestion();
         }
     });
-  //goes to previous question. this is acoplished by decreasing the counter and setting the screen back to a previous question.
+  //goes to previous question. this is acomplished by decreasing the counter and setting the screen back to a previous question.
   $('#prev').click(function () 
     {
         chooseOption();
@@ -104,7 +106,7 @@
     {
         selectOptions[quesCounter] = +$('input[name="answer"]:checked').val();
     }
-   //when next function nextquestion happpends. the quizspace fades out of the screen the questions are removed and new questions are assigned.
+   //when next function nextquestion happpends. the quizspace fades out of the screen. The questions are removed and new questions are assigned.
   function nextQuestion() 
     {
         quizSpace.fadeOut(function() 
