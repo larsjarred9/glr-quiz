@@ -5,9 +5,9 @@
         href="https://1190327580.rsc.cdn77.org/sites/bd_glr_nl/themes/glr//favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/a900db2b0a40910b1f584fbed5e438e8?family=Caecilia+LT+Std" rel="stylesheet"
-        type="text/css" />
+        type="text/css" /> -->
     <title>Grafisch Lyceum Rotterdam - Quizes</title>
 </head>
 
@@ -23,7 +23,7 @@
         </div>
         <div class="box-formulier">
             <div class="formulier-content"></div>
-            <form>
+            <form id="form">
                 <div class="form-row">
                     <div class="col">
                         <label for="Voornaam">Voornaam</label>
@@ -57,7 +57,7 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <input class="btn btn-glr" required type="submit" value="Start Quiz">
+                    <input class="btn btn-glr" onclick="sendData({test:'ok'})" required type="submit" value="Start Quiz">
                 </div>
             </form>
         </div>

@@ -48,10 +48,12 @@
     {
         var element = $('<div>',{id: 'question'});
         var header = $('<h2>Vraag ' + (index + 1) + ' :</h2>');
-        $( "#question-titel" ).append(header);
+        //$( "#question-titel" ).remove();
+        $( "#question-titel" ).html(header);
 
         var question = $('<p>').append(allQuestions[index].question);
-        $( "#question-question" ).append(question);
+        //$( "#question-question" ).remove();
+        $( "#question-question" ).html(question);
 
         var radio = radioButtons(index);
         element.append(radio);
