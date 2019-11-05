@@ -91,6 +91,7 @@ ul li
     margin: 10px;
     padding: 10px;
     display: inline-block; 
+    color: #3c3c3b;
 }
 #start 
 {
@@ -112,6 +113,6 @@ input[type="radio"]{
     text-decoration: none;
 }
 .btn-glr a:hover {
-    color: darkslategray;
+    color: #3c3c3b;
     text-decoration: none;
 }
