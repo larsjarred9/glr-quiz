@@ -43,11 +43,9 @@ form label {
     color: #000000;
     font-family: 'Caecilia LT Std 85 Heavy', sans-serif;
 }
-/* alle code die geen betrekking heeft tot de homepage */
-
 #myProgress {
     width: 100%;
-    background-color: grey;
+    background-color: whi;
 
 }
 
@@ -57,10 +55,10 @@ form label {
     border-color: #8FE507 !important;
 }
 
-#myBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
+#myBar{
+    color: #fff;
+    background-color: #8FE507 !important;
+    border-color: #8FE507 !important; 
 }
 
 #Inleveren{
@@ -92,10 +90,38 @@ ul li
     padding: 5px;
     display: inline-block; 
 }
-#prev 
+/*#prev 
 {
     display:none;
-}
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #297;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  #prev:hover{
+    background-color: #3a8;
+  }
+  #next
+  {
+    display:none;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #297;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  #next:hover{
+    background-color: #3a8;
+  } */
 #start 
 {
     display:none;
@@ -103,4 +129,19 @@ ul li
 }
 input[type="radio"]{
     cursor: pointer;
+}
+#question-question {
+    margin-top: -1px;
+    padding-bottom: 1px;
+}
+#question-titel {
+    padding-top: 3px;
+}
+.btn-glr a {
+    color: white;
+    text-decoration: none;
+}
+.btn-glr a:hover {
+    color: darkslategray;
+    text-decoration: none;
 }

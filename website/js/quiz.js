@@ -1,48 +1,20 @@
 (function() //creates the questions and the entire quiz
  {
-  var allQuestions = [{
-    question: "The tree sends downroots from its branches to the soil is know as:",
-    options: ["Oak", "Pine", "Banyan", "Palm"],
-    answer: 2
+  var allQuestions = [{ // Vul hier je vragen in (0 = 1, 1 = 2)
+    question: "Wat betekend HTML?",
+    options: ["Hyper Text Markup Language", "Hyper Text Margin Langugage", "Hyper Text Mega Language", "Hyper Text Mondial Language"],
+    answer: 0
   }, {
-    question: "Electric bulb filament is made of",
-    options: ["Copper", "Aluminum", "lead", "Tungsten"],
-    answer: 3
-  }, {
-    question: "Non Metal that remains liquid at room temprature is",
-    options: ["Phophorous", "Bromine", "Clorine","Helium"],
+    question: "Waar staat CSS voor?",
+    options: ["Centralised Style Sheet", "Cascading Style Sheet"],
     answer: 1
-  },{
-    question: "Which of the following is used in Pencils ?",
-    options: ["Graphite", "Silicon", "Charcoal", "Phosphorous"],
-    answer: 0
   }, {
-    question: "Chemical formula of water ?",
-    options: ["NaA1O2", "H2O", "Al2O3", "CaSiO3"],
-    answer: 1
-  },{
-    question: "The gas filled in electric bulb is ?",
-    options: ["Nitrogen", "Hydrogen", "Carbon Dioxide", "Oxygen"],
-    answer: 0
-  },{
-    question: "Whashing soda is the comman name for",
-    options: ["Sodium Carbonate", "Calcium Bicarbonate", "Sodium Bicarbonate", "Calcium Carbonate"],
-    answer: 0
-  },{
-    question: "Which gas is not known as green house gas ?",
-    options: ["Methane", "Nitrous oxide", "Carbon Dioxide", "Hydrogen"],
+    question: "Wat vond je van deze quiz?",
+    options: ["Slecht", "Ok", "Voldoende","Goed"],
     answer: 3
-  },{
-    question: "The hardest substance availabe on earth is",
-    options: ["Gold", "Iron", "Diamond", "Platinum"],
-    answer: 2
-  },{
-    question: "Used as a lubricant",
-    options: ["Graphite", "Silica", "Iron Oxide", "Diamond"],
-    answer: 0
     }];
  //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
- //Then start with a new {} and type your question, options and answers there
+ //Then start with a new {} and type your question, options and answers there. Just don't edit the code thats under here
   //set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
   var quesCounter = 0;
   var selectOptions = [];
@@ -56,7 +28,7 @@
         chooseOption();
         if (isNaN(selectOptions[quesCounter])) 
         {
-            alert('Please select an option !');
+            alert('Selecteer een antwoord.');
         } 
         else 
         {
@@ -75,11 +47,11 @@
   function createElement(index) 
     {
         var element = $('<div>',{id: 'question'});
-        var header = $('<h2>Question No. ' + (index + 1) + ' :</h2>');
-        element.append(header);
+        var header = $('<h2>Vraag ' + (index + 1) + ' :</h2>');
+        $( "#question-titel" ).append(header);
 
         var question = $('<p>').append(allQuestions[index].question);
-        element.append(question);
+        $( "#question-question" ).append(question);
 
         var radio = radioButtons(index);
         element.append(radio);
@@ -116,7 +88,7 @@
                 {
                     var nextQuestion = createElement(quesCounter);//creates the index to where the quescounter is at right now
                     quizSpace.append(nextQuestion).fadeIn();//fades into the space it will be located to
-                    if (!(isNaN(selectOptions[quesCounter]))) 
+                    if (!(isNaN(selectOptions[quesCounter]))) //if no option has been selected
                     {
                       $('input[value='+selectOptions[quesCounter]+']').prop('checked', true);//checkes if every thing is loaded correctly with the correct answer
                     }
@@ -139,6 +111,28 @@
                 }
         });
     }
+    function addProgress() {
+      //increase myBarWidth by 100/questionsNumber
+      myBarWidth += 100 / numberQuestions;
+      // make sure that width of the progress bar won't be more than 100% & fix for questionsNumber that are not dividers of 100
+      if (myBarWidth > 100) {
+          myBarWidth = 100;
+      }
+      // update the width #myBar by changing the css
+      document.getElementById("myBar").style.width = myBarWidth + "%";
+  }
+   
+  // deduct progress
+  function deductProgress() {
+      //decrease myBarWidth by 100/questionsNumber
+      myBarWidth -= 100 / myQuestions.length;
+      // make sure that width of the progress bar won't be more than 0% & fix for questionsNumber that are not dividers of 100
+      if (myBarWidth < 0) {
+          myBarWidth = 0;
+      }
+      // update the width #myBar by changing the css
+      document.getElementById("myBar").style.width = myBarWidth + "%";
+  }
   
   function displayResult() //display's results of the quiz and what answers you have chosen to choose. First it wil reset the variable correct to 0.
  //then it will say for every option you have selected you might get a point depending if the answer is correct if so a point is added. it wil also display the folowing text
@@ -152,7 +146,7 @@
             correct++;
           }
         }
-        score.append('You scored ' + correct + ' out of ' +allQuestions.length);
+        score.append('Je hebt de volgende score ' + correct + ' van de ' +allQuestions.length);
         return score;
   }//shows the score you have at the end
 })();
