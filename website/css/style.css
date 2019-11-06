@@ -12,7 +12,7 @@ body{
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     border-radius: 25px;
-    -webkit-border-radius border-radius: 25px;
+    -webkit-border-radius: 25px;
 }
 
 .box-formulier {
@@ -24,7 +24,7 @@ body{
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     border-radius: 25px;
-    -webkit-border-radius border-radius: 25px;
+    -webkit-border-radius: 25px;
 }
 .vraag-content {
     padding: 0 auto;
@@ -60,6 +60,7 @@ form label {
 }
 
 #myBar{
+    height: 30px;
     color: white;
     background-color: #8FE507 !important;
     border-color: #8FE507 !important; 
@@ -126,5 +127,5 @@ input[type="radio"]{
     padding-top: 50px;
 }
 #image-big {
-    padding-top: 50px;
+    padding-top: 30px;
 }

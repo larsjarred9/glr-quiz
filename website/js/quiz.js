@@ -1,6 +1,10 @@
 var myBarWidth = 0;
 // create a variable for the number of questions
 var questionsNumber = 3;
+
+
+//Alles hierboven is niet in gebruik **********************************
+
 (function() //creates the questions and the entire quiz
  {
   var allQuestions = [{ // Vul hier je vragen in (0 = 1, 1 = 2)
@@ -12,10 +16,15 @@ var questionsNumber = 3;
     options: [" Centralised Style Sheet", " Cascading Style Sheet"],
     answer: 1
   }, {
-    question: "Wat vond je van deze quiz?",
-    options: [" Slecht", " Ok", " Voldoende"," Goed"],
-    answer: 3
-    }];
+    question: "Wie was de eigenaar van Microsoft?",
+    options: [" Bill Gates", " Steve Jobs"],
+    answer: 0
+    },
+  {
+    question: "Wat was de eerste website?",
+    options: [" Google.com", " index.html/index", " info.cern.ch"],
+    answer: 2
+  }];
  //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
  //Then start with a new {} and type your question, options and answers there. Just don't edit the code thats under here
   //set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
@@ -40,6 +49,7 @@ var questionsNumber = 3;
         {
           quesCounter++;
           nextQuestion();
+          addProgress();
         }
     });
   //goes to previous question. this is acomplished by decreasing the counter and setting the screen back to a previous question.
@@ -47,6 +57,7 @@ var questionsNumber = 3;
     {
         chooseOption();
         quesCounter--;
+        deductProgress();
         nextQuestion();
     });
   //creates all of the elements needed to display the quizez index inside the container and inside the div element quiz. And set al radio element in place
@@ -152,7 +163,7 @@ var questionsNumber = 3;
             correct++;
           }
         }
-        score.append('Je hebt de volgende score ' + correct + ' van de ' +allQuestions.length);
+        score.append('Je hebt de volgende score <b>' + correct + '</b> van de <b>' +allQuestions.length) + "</>";
         return score;
   }//shows the score you have at the end
 })();

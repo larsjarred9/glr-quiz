@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="shortcut icon" type="image/x-icon"
         href="https://1190327580.rsc.cdn77.org/sites/bd_glr_nl/themes/glr//favicon.ico">
@@ -9,23 +8,20 @@
     <link href="//db.onlinewebfonts.com/c/a900db2b0a40910b1f584fbed5e438e8?family=Caecilia+LT+Std" rel="stylesheet"
         type="text/css" /> -->
     <title>Grafisch Lyceum Rotterdam - Quizes</title>
-</head>Í
-
+</head>
 <body>
     <div id="myProgress">
-        <div id="myBar"></div>
+        <div id="myBar" style="width: 0%"></div>
     </div>
     <!--div>Time left = <span id="timer"></span></div>-->
     <div class="container-fluid">
-        <center><a href="https://www.glr.nl"><img clsss="img-fluid" src="images/GLRlogo_RGB.jpg" width="100"
+        <center><a href="index.html"><img clsss="img-fluid" src="images/GLRlogo_RGB.jpg" width="100"
                     height="100"></a></center>
-        <div class="row">
-            <div class="box-vraag">
-                <div class="vraag-content">
-                    <!--h2>Vraag 1: Dit is een placeholder voor de vraag?</h2> -->
-                    <div id="question-titel"></div>
-                    <div id="question-question"></div>
-                </div>
+        <div class="box-vraag">
+            <div class="vraag-content">
+                <!--h2>Vraag 1: Dit is een placeholder voor de vraag?</h2> -->
+                <div id="question-titel"></div>
+                <div id="question-question"></div>
             </div>
         </div>
         <div class="box-formulier">
@@ -35,27 +31,24 @@
                         <div class="formulier-content"></div>
                         <div class="container">
                             <div id="quiz"></div>
-                            <div class="btn btn-glr" id="next"><a href="#">Volgende</a></div>
                             <div class="btn btn-glr" id="prev"><a href="#">Vorrige</a></div>
+                            <div class="btn btn-glr" id="next"><a href="#">Volgende</a></div>
+                            <br><br>
+                            <p><b id="timer">Tijd resterend:</b> <span id="time"></span> minuten.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <center><img id="image-big" src="https://via.placeholder.com/500x250?text=500x250+MPU"></center>
+                    <center><img id="image-big" class="img-fluid" src="images/ideas.png"></center>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <!--<br>
-            <br>
-            <div id="myProgress">
-                <div id="myBar"></div>
-            </div>
-            <button id="Inleveren">Opdracht Inleveren</button>-->
+            <!--<button id="Inleveren">Opdracht Inleveren</button>-->
     </div>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/timer.js"></script>
 </body>
-
 </html>
