@@ -1,24 +1,30 @@
+var myBarWidth = 0;
+// create a variable for the number of questions
+var questionsNumber = 3;
 (function() //creates the questions and the entire quiz
  {
   var allQuestions = [{ // Vul hier je vragen in (0 = 1, 1 = 2)
     question: "Wat betekend HTML?",
-    options: ["Hyper Text Markup Language", "Hyper Text Margin Langugage", "Hyper Text Mega Language", "Hyper Text Mondial Language"],
+    options: [" Hyper Text Markup Language", " Hyper Text Margin Langugage", " Hyper Text Mega Language", " Hyper Text Mondial Language"],
     answer: 0
   }, {
     question: "Waar staat CSS voor?",
-    options: ["Centralised Style Sheet", "Cascading Style Sheet"],
+    options: [" Centralised Style Sheet", " Cascading Style Sheet"],
     answer: 1
   }, {
     question: "Wat vond je van deze quiz?",
-    options: ["Slecht", "Ok", "Voldoende","Goed"],
+    options: [" Slecht", " Ok", " Voldoende"," Goed"],
     answer: 3
     }];
  //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
  //Then start with a new {} and type your question, options and answers there. Just don't edit the code thats under here
   //set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
+  //plus change the var questionsNumber to the amount of questions youhave in the allQuestions
+  //Keep in mind do not and we mean do not edit the code below!!!!!!!!!!
   var quesCounter = 0;
   var selectOptions = [];
   var quizdiv = $('#quiz');
+  var numberQuestions = allQuestions.length;
     
   nextQuestion();
   //function of the next question. When clicked it wil check if a option has been selected if it does than it ads a point to the questions counter.
@@ -123,11 +129,10 @@
       // update the width #myBar by changing the css
       document.getElementById("myBar").style.width = myBarWidth + "%";
   }
-   
   // deduct progress
   function deductProgress() {
       //decrease myBarWidth by 100/questionsNumber
-      myBarWidth -= 100 / myQuestions.length;
+      myBarWidth -= 100 / allQuestions.length;
       // make sure that width of the progress bar won't be more than 0% & fix for questionsNumber that are not dividers of 100
       if (myBarWidth < 0) {
           myBarWidth = 0;
@@ -135,7 +140,6 @@
       // update the width #myBar by changing the css
       document.getElementById("myBar").style.width = myBarWidth + "%";
   }
-  
   function displayResult() //display's results of the quiz and what answers you have chosen to choose. First it wil reset the variable correct to 0.
  //then it will say for every option you have selected you might get a point depending if the answer is correct if so a point is added. it wil also display the folowing text
     {

@@ -10,7 +10,9 @@ body{
     margin-top: 3vh;
     width: 75%;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     border-radius: 25px;
+    -webkit-border-radius border-radius: 25px;
 }
 
 .box-formulier {
@@ -20,7 +22,9 @@ body{
     min-height: 450px;
     width: 75%;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     border-radius: 25px;
+    -webkit-border-radius border-radius: 25px;
 }
 .vraag-content {
     padding: 0 auto;
@@ -45,7 +49,7 @@ form label {
 }
 #myProgress {
     width: 100%;
-    background-color: white;
+    background-color:white;
 
 }
 
@@ -56,12 +60,12 @@ form label {
 }
 
 #myBar{
-    color: #fff;
+    color: white;
     background-color: #8FE507 !important;
     border-color: #8FE507 !important; 
 }
 
-#Inleveren{
+/*#Inleveren{
     font-family: sans-serif;
     font-size: 20px;
     background-color: #297;
@@ -74,7 +78,7 @@ form label {
 }
 #Inleveren:hover{
     background-color: #3a8;
-}
+}*/
 ul 
 {
     list-style-type: none;
@@ -85,8 +89,9 @@ ul
 ul li
 {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     /*border-radius: 25px; */
-    background: #8FE507;
+    background: #cfe09b;
     width: 200px;
     margin: 10px;
     padding: 10px;
@@ -115,4 +120,11 @@ input[type="radio"]{
 .btn-glr a:hover {
     color: #3c3c3b;
     text-decoration: none;
+}
+.box-formulier-container {
+    padding: 15px;
+    padding-top: 50px;
+}
+#image-big {
+    padding-top: 50px;
 }

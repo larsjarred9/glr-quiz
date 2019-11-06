@@ -23,7 +23,7 @@
         </div>
         <div class="box-formulier">
             <div class="formulier-content"></div>
-            <form id="form">
+            <form id="form" action="vragen.html" method="POST">
                 <div class="form-row">
                     <div class="col">
                         <label for="Voornaam">Voornaam</label>
@@ -57,7 +57,7 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <input class="btn btn-glr" onclick="sendData({test:'ok'})" required type="submit" value="Start Quiz">
+                    <input class="btn btn-glr" required type="submit" value="Start Quiz">
                 </div>
             </form>
         </div>
@@ -72,3 +72,9 @@
 </body>
 
 </html>
+
+<script>
+    function nextPage() {
+        window.location.href="sample.html";
+    }
+</script>
