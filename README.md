@@ -2,7 +2,7 @@
 Een project van 4 lesweken (Regio Rotterdam)
 
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?ED93ED157F320CB02576030089CD6D1782F3
+https://prod.liveshare.vsengsaas.visualstudio.com/join?BB56EB126497499D3EA4926F080398222B64
 https://pastebin.com/uHcp8iiQ
 
 # Vragen
