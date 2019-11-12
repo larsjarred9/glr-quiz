@@ -33,12 +33,12 @@ https://pastebin.com/uHcp8iiQ
 * Mogenlijkheid tot plaatjes
 
 # Known Issues
-> Waneer de timer stopt met lopen stopt de quiz zelf niet. Dit kan dus een loophole in de quiz veroorzaken zodat iedereen een 10 bij wijze van spreken zou kunnen halen.
-> Waneer je snel op de next button klikt kan je soms een vraag overslaan.
-> Het plaatje kan op kleinere aparaten overlappen met de andere elementen.
-> De timer word niet weggehaald waneer je alle vragen hebt beantwoord.
-> De vraag heeft nog geen fadein en fadeout.
-> Het plaatje heeft nog geen fadein en fadeout.
+* Waneer de timer stopt met lopen stopt de quiz zelf niet. Dit kan dus een loophole in de quiz veroorzaken zodat iedereen een 10 bij wijze van spreken zou kunnen halen.
+* Waneer je snel op de next button klikt kan je soms een vraag overslaan.
+* Het plaatje kan op kleinere aparaten overlappen met de andere elementen.
+* De timer word niet weggehaald waneer je alle vragen hebt beantwoord.
+* De vraag heeft nog geen fadein en fadeout.
+* Het plaatje heeft nog geen fadein en fadeout.
 
 
 # Huistijl Website
