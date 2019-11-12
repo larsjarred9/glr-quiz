@@ -1,28 +1,36 @@
 
+// create a variable for the number of questions
+var myBarWidth = 0;
 
-
-//Setup of the quiz
-
+// Vanaf hier begint setup //
+// Het aantal vragen -1
+var questionsNumber = 3;
 (function() //creates the questions and the entire quiz
  {
   var allQuestions = [{ // Vul hier je vragen in (0 = 1, 1 = 2)
     question: "Wat betekend HTML?",
     options: [" Hyper Text Markup Language", " Hyper Text Margin Langugage", " Hyper Text Mega Language", " Hyper Text Mondial Language"],
-    answer: 0
+    answer: 0,
+    image: "https://static3.depositphotos.com/1000764/243/i/950/depositphotos_2437630-stock-photo-3d-person-with-question-sign.jpg"
   }, {
     question: "Waar staat CSS voor?",
     options: [" Centralised Style Sheet", " Cascading Style Sheet"],
-    answer: 1
+    answer: 1,
+    image: "https://www.dezandvoortse.nl/wp-content/uploads/2018/08/vraagteken.jpeg",
   }, {
     question: "Wie was de eigenaar van Microsoft?",
     options: [" Bill Gates", " Steve Jobs"],
-    answer: 0
+    answer: 0,
+    image: ""
     },
   {
     question: "Wat was de eerste website?",
     options: [" Google.com", " index.html/index", " info.cern.ch"],
-    answer: 2
+    answer: 2,
+    image: ""
   }];
+
+
  //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
  //Then start with a new {} and type your question, options and answers there. Just don't edit the code thats under here
   //set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
@@ -120,11 +128,13 @@
                     if(quesCounter === 1)//if the quescounter is atleast one than show the prev button
                     {
                       $('#prev').show();
+                      $('#Inleveren').hide();
                     } //else it wil hide the quescounter but it wil still show the next button no matter the quescounter
                     else if(quesCounter === 0)
                     {
                       $('#prev').hide();
                       $('#next').show();
+                      $('#Inleveren').hide();
                     }
                 }
               else 
@@ -133,6 +143,7 @@
                     quizdiv.append(scoreRslt).fadeIn();
                     $('#next').hide();
                     $('#prev').hide();
+                    $('#Inleveren').show();
                 }
         });
     }

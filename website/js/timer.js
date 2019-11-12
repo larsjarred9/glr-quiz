@@ -18,6 +18,12 @@ var timerSetTime = 0.1
 //if the timer is lower than 0 then make a text appear that display's the text De tijd is om. after that the quiz should not be accecesed anymore 
                 if (--timer < 0) {
                     display.textContent = "De tijd is om.";
+                    $('#question').remove();
+                    $('#next').hide();
+                    $('#prev').hide();
+                    $('#Inleveren').show();
+                    document.getElementById("myBar").style.width = 100 + "%";
+                    score.append('Je hebt de volgende score <b>' + correct + '</b> van de <b>' +allQuestions.length) + "</>";
                     displayResult();
                 }
             }, 1000);
