@@ -21,16 +21,24 @@ https://pastebin.com/uHcp8iiQ
 # Eisen
 
 * HTML, CSS
-* Meerkeuze Vragen
-* Maximaal 15 minuten om alle vragen te beantwoorden
-* Zelf invoerbare vragen (Via JS bestand)
+~~* Meerkeuze Vragen~~
+~~* Maximaal 15 minuten om alle vragen te beantwoorden~~
+~~* Zelf invoerbare vragen (Via JS bestand)~~
 * Vragen moeten gerandomised worden kwa volgorde
-* GLR Kleuren & Huisstijl
-* Chrome / Safari
-* Hoeft geen mobile support
+~~* GLR Kleuren & Huisstijl~~
+~~* Chrome / Safari~~
+~~* Hoeft geen mobile support~~
 * Er moet een score worden gedisplayed & de docent moet zelf kunnen kiezen hoeveel punten 1 vraag is
-* Er moet een progress bar worden laten zien
+~~* Er moet een progress bar worden laten zien~~
 * Mogenlijkheid tot plaatjes
+
+# Known Issues
+> Waneer de timer stopt met lopen stopt de quiz zelf niet. Dit kan dus een loophole in de quiz veroorzaken zodat iedereen een 10 bij wijze van spreken zou kunnen halen.
+> Waneer je snel op de next button klikt kan je soms een vraag overslaan.
+> Het plaatje kan op kleinere aparaten overlappen met de andere elementen.
+> De timer word niet weggehaald waneer je alle vragen hebt beantwoord.
+> De vraag heeft nog geen fadein en fadeout.
+> Het plaatje heeft nog geen fadein en fadeout.
 
 
 # Huistijl Website
