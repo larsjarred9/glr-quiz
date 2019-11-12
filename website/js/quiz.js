@@ -1,9 +1,7 @@
-var myBarWidth = 0;
-// create a variable for the number of questions
-var questionsNumber = 3;
 
 
-//Alles hierboven is niet in gebruik **********************************
+
+//Setup of the quiz
 
 (function() //creates the questions and the entire quiz
  {
@@ -38,7 +36,10 @@ var questionsNumber = 3;
   nextQuestion();
   //function of the next question. When clicked it wil check if a option has been selected if it does than it ads a point to the questions counter.
  //it wil then go to the next question. If it does not find anything being entered than it wil alert (please select an option !).
-  $('#next').click(function () 
+ function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+ $('#next').click(function () 
     {
         chooseOption();
         if (isNaN(selectOptions[quesCounter])) 
@@ -51,7 +52,11 @@ var questionsNumber = 3;
           nextQuestion();
           addProgress();
         }
-    });
+        async function demo() {
+          console.log('Taking a break...');
+          await sleep(2000);
+        }
+      });
   //goes to previous question. this is acomplished by decreasing the counter and setting the screen back to a previous question.
   $('#prev').click(function () 
     {
@@ -60,6 +65,7 @@ var questionsNumber = 3;
         deductProgress();
         nextQuestion();
     });
+    
   //creates all of the elements needed to display the quizez index inside the container and inside the div element quiz. And set al radio element in place
   function createElement(index) 
     {

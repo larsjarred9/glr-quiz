@@ -28,7 +28,7 @@
     //You can change the code above. Just copy one of the examples to add a question and edit the question and the Answer.
     //if you are a customer using this programm. Do not edit this code except for the code above!
 
-      function randomQuestion(){ Math.floor(Math.random)() * (myQuestions.length));
+      function randomQuestion(){ Math.floor(Math.random)() * (myQuestions.length);
       document.getElementById('questions').innerHTML = myQuestions;
       myQuestions.splice(randomQuestion, 1);}
 
