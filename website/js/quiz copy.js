@@ -140,4 +140,5 @@ function deductProgress() {
     score.append('Je hebt de volgende score: ' + correct + ' van de ' + allQuestions.length);
     return score;
   }//shows the score you have at the end
-})();
+;
+

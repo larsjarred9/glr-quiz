@@ -11,8 +11,8 @@ var timerSetTime = 0.1
                 minutes = parseInt(timer / 60, 10)
                 seconds = parseInt(timer % 60, 10);
 
-                minutes = minutes < 10 ? "0" + minutes : minutes + " Minuten";
-                seconds = seconds < 10 ? "0" + seconds : seconds  + " Minuten";
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
 //displaying the content that is needed to be displayed
                 display.textContent = minutes + ":" + seconds  + " Minuten";
 //if the timer is lower than 0 then make a text appear that display's the text De tijd is om. after that the quiz should not be accecesed anymore 
@@ -22,9 +22,11 @@ var timerSetTime = 0.1
                     $('#next').hide();
                     $('#prev').hide();
                     $('#Inleveren').show();
-                    document.getElementById("myBar").style.width = 100 + "%";
-                    score.append('Je hebt de volgende score <b>' + correct + '</b> van de <b>' +allQuestions.length) + "</>";
+                    $( "#question-titel" ).html("Je hebt de volgende score:");
+                    $( "#question-question" ).html("");
                     displayResult();
+                    $( "#question-question" ).html('Je hebt de volgende score <b>' + correct + '</b> van de <b>' +allQuestions.length + "</b>");
+                    document.getElementById("myBar").style.width = 100 + "%";
                 }
             }, 1000);
         }

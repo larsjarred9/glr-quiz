@@ -30,7 +30,6 @@ var questionsNumber = 3;
     image: ""
   }];
 
-
  //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
  //Then start with a new {} and type your question, options and answers there. Just don't edit the code thats under here
   //set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
@@ -40,7 +39,6 @@ var questionsNumber = 3;
   var selectOptions = [];
   var quizdiv = $('#quiz');
   var numberQuestions = allQuestions.length;
-    
   nextQuestion();
   //function of the next question. When clicked it wil check if a option has been selected if it does than it ads a point to the questions counter.
  //it wil then go to the next question. If it does not find anything being entered than it wil alert (please select an option !).
@@ -120,8 +118,10 @@ var questionsNumber = 3;
               if(quesCounter < allQuestions.length)
                 {
                     var nextQuestion = createElement(quesCounter);//creates the index to where the quescounter is at right now
-                    quizdiv.append(nextQuestion).fadeIn();//fades into the space it will be located to
-                    if (!(isNaN(selectOptions[quesCounter]))) //if no option has been selected
+                    quizdiv.append(nextQuestion).fadeIn();
+                    quizdiv.append
+                    //fades into the space it will be located to
+                    if (!(isNaN(selectOptions[quesCounter]))) //if no option or number has been selected
                     {
                       $('input[value='+selectOptions[quesCounter]+']').prop('checked', true);//checkes if every thing is loaded correctly with the correct answer
                     }
@@ -184,3 +184,4 @@ var questionsNumber = 3;
         return score;
   }//shows the score you have at the end
 })();
+//
