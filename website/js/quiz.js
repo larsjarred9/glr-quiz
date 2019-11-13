@@ -137,12 +137,14 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                     {
                       $('#prev').show();
                       $('#Inleveren').hide();
+                      $('#Klaar').hide();
                     } //else it wil hide the quescounter but it wil still show the next button no matter the quescounter
                     else if(quesCounter === 0)
                     {
                       $('#prev').hide();
                       $('#next').show();
                       $('#Inleveren').hide();
+                      $('#Klaar').hide();
                     }
                 }
               else 
@@ -152,6 +154,10 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                     $('#next').hide();
                     $('#prev').hide();
                     $('#Inleveren').show();
+                    $('#timer').remove();
+                    $('#time').remove();
+                    $('#Klaar').show();
+                    //I have put here some extra css code html code and some other code with the ID Klaar
                 }
         });
     }
@@ -197,7 +203,6 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
         }
         $( "#question-titel" ).html("<h2>Je hebt een " + normering + " voor deze quiz behaald.</h2>");
         $( "#question-question" ).html("");
-        $("#time-time").hide;
         return score;
   }//shows the score you have at the end
 })();
