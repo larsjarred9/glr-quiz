@@ -1,10 +1,11 @@
-
 // create a variable for the number of questions
 var myBarWidth = 0;
+//you must remember that the computer always counts the first question or option as a 0. It always beggings with a zero then the next question/option is a 1, then a 2, ect.
+// Vanaf hier begint setup //From here begins the setup 
+// Het aantal vragen //total amount of questions 
+var questionsNumber = 4;
+var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to calculate a specific number if you want more information about it than ask your local school or education center
 
-// Vanaf hier begint setup //
-// Het aantal vragen -1
-var questionsNumber = 3;
 (function() //creates the questions and the entire quiz
  {
   var allQuestions = [{ // Vul hier je vragen in (0 = 1, 1 = 2)
@@ -28,13 +29,20 @@ var questionsNumber = 3;
     options: [" Google.com", " index.html/index", " info.cern.ch"],
     answer: 2,
     image: ""
+  },
+  {
+    question: "Wat is altijd het eerste programma wat je schrijft in elke taal",
+    options: [" Hello World", " Alive and Kicking", " Fuck You", " I am sorry but the system is broken"],
+    answer: 0,
+    image: ""
   }];
 
- //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
- //Then start with a new {} and type your question, options and answers there. Just don't edit the code thats under here
-  //set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
-  //plus change the var questionsNumber to the amount of questions youhave in the allQuestions
-  //Keep in mind do not and we mean do not edit the code below!!!!!!!!!!
+//if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
+//Then start with a new {} and type your question, options and answers there. Just don't edit the code thats under here
+//set the amount of points or questions you have taken at the start, how many options you have and how much space the quiz takes.
+//plus change the var questionsNumber to the amount of questions youhave in the allQuestions
+//Keep in mind do not and we mean do not edit the code below!!!!!!!!!! //an exception to that rule, is that you can change the normering at display results were you can edit the standerdization of the counting system to your prefrences
+  
   var quesCounter = 0;
   var selectOptions = [];
   var quizdiv = $('#quiz');
@@ -179,9 +187,17 @@ var questionsNumber = 3;
           {
             correct++;
           }
+        } //this will set down the basis for how numbers are accounted for. This still needs to be set to an english standerd languagesss
+        var normering = 9 * (correct / (1 + questionsNumber)) + normeringsnorm;
+        if (normering > 10.0) {
+          var normering = 10
+        }  
+        else if (normering < 1.0) {
+          var normering = 1
         }
-        score.append('Je hebt de volgende score <b>' + correct + '</b> van de <b>' +allQuestions.length) + "</>";
+        $( "#question-titel" ).html("<h2>Je hebt een " + normering + " voor deze quiz behaald.</h2>");
+        $( "#question-question" ).html("");
+        $("#time-time").hide;
         return score;
   }//shows the score you have at the end
 })();
-//

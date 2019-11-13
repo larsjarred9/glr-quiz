@@ -1,12 +1,12 @@
 //Set the default time that remains
 //to change the time, then go to the variable timerSetTime and change the time you want to set it
-var timerSetTime = 0.1
+var timerSetTime = 2
 
 //the timer function makesa timer that will show a duration and displays it
         function startTimer(duration, display) {
             //difining the variables
             var timer = duration, minutes, seconds;
-            //setting the function to make the minutes and seconds value's
+            //setting the  function to make the minutes and seconds value's
             setInterval(function () {
                 minutes = parseInt(timer / 60, 10)
                 seconds = parseInt(timer % 60, 10);
@@ -16,11 +16,12 @@ var timerSetTime = 0.1
 //displaying the content that is needed to be displayed
                 display.textContent = minutes + ":" + seconds  + " Minuten";
 //if the timer is lower than 0 then make a text appear that display's the text De tijd is om. after that the quiz should not be accecesed anymore 
-                if (--timer < 0) {
+                if (--timer < 0 ) {
                     display.textContent = "De tijd is om.";
                     $('#question').remove();
                     $('#next').hide();
                     $('#prev').hide();
+                    var functionloop = true
                     $('#Inleveren').show();
                     $( "#question-titel" ).html("Je hebt de volgende score:");
                     $( "#question-question" ).html("");
