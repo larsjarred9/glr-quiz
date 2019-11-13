@@ -21,9 +21,10 @@ var timerSetTime = 0.1
                     $('#question').remove();
                     $('#next').hide();
                     $('#prev').hide();
+                    $('#timer').remove();
                     var functionloop = true
                     $('#Inleveren').show();
-                    $( "#question-titel" ).html("Je hebt de volgende score:");
+                    $( "#question-titel" ).html("<h2>Je hebt een " + normering + " voor deze quiz behaald.</h2>:");
                     $( "#question-question" ).html("");
                     displayResult();
                     $( "#question-question" ).html('Je hebt de volgende score <b>' + correct + '</b> van de <b>' +allQuestions.length + "</b>");
