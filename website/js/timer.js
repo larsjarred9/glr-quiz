@@ -23,12 +23,12 @@ var timerSetTime = 1
                     $('#prev').hide();
                     $('#timer').remove();
                     var functionloop = true
+                    document.getElementById("myBar").style.width = 100 + "%";
                     $('#Inleveren').show();
                     $( "#question-titel" ).html("<h2>Je hebt een " + normering + " voor deze quiz behaald.</h2>:");
                     $( "#question-question" ).html("");
                     displayResult();
                     $( "#question-question" ).html('Je hebt de volgende score <b>' + correct + '</b> van de <b>' +allQuestions.length + "</b>");
-                    document.getElementById("myBar").style.width = 100 + "%";
                 }
             }, 1000);
         }
