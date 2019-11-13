@@ -1,6 +1,6 @@
 //Set the default time that remains
 //to change the time, then go to the variable timerSetTime and change the time you want to set it
-var timerSetTime = 2
+var timerSetTime = 0.1
 
 //the timer function makesa timer that will show a duration and displays it
         function startTimer(duration, display) {
