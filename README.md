@@ -39,6 +39,7 @@ https://pastebin.com/uHcp8iiQ
 * De timer word niet weggehaald waneer je alle vragen hebt beantwoord.
 * De vraag heeft nog geen fadein en fadeout.
 * Het plaatje heeft nog geen fadein en fadeout.
+* De variabele normering wordt steeds op undefinend gezet.
 
 
 # Huistijl Website
