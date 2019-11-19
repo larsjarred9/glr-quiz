@@ -139,6 +139,7 @@ input[type="radio"] {
 
 #image-big {
     padding-top: 30px;
+    max-width: 500px;
 }
 
 #timer {

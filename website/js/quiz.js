@@ -16,7 +16,7 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                 question: "Wat betekend HTML?",
                 options: [" Hyper Text Markup Language", " Hyper Text Margin Langugage", " Hyper Text Mega Language", " Hyper Text Mondial Language"],
                 answer: 0,
-                image: "https://static3.depositphotos.com/1000764/243/i/950/depositphotos_2437630-stock-photo-3d-person-with-question-sign.jpg"
+                image: "https://img.freepik.com/free-vector/illustration-web-design_53876-5835.jpg?size=338&ext=jpg"
             }, {
                 question: "Waar staat CSS voor?",
                 options: [" Centralised Style Sheet", " Cascading Style Sheet"],
@@ -26,19 +26,19 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                 question: "Wie was de eigenaar van Microsoft?",
                 options: [" Bill Gates", " Steve Jobs"],
                 answer: 0,
-                image: ""
+                image: "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg"
             },
             {
                 question: "Wat was de eerste website?",
                 options: [" Google.com", " index.html/index", " info.cern.ch"],
                 answer: 2,
-                image: ""
+                image: "https://www.telegraph.co.uk/content/dam/technology/2017/08/03/Internet2_trans_NvBQzQNjv4BqJRZdqtQCcB0-hjTaQxsqmtMZZIw9jvU_z2DJKltQ1FE.jpg?imwidth=450"
             },
             {
                 question: "Wat is altijd het eerste programma wat je schrijft in elke taal",
                 options: [" Hello World", " Alive and Kicking", " Joe", " Warning Warner"],
                 answer: 0,
-                image: ""
+                image: "https://miro.medium.com/max/848/1*e42aZTxR5ZDBbrv-ioIKFA.jpeg"
             }
         ];
 
@@ -90,6 +90,7 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
             var question = $('<p>').append(allQuestions[index].question);
             //$( "#question-question" ).remove();
             $("#question-question").html(question);
+            document.getElementById("image-big").src = (allQuestions[index].image);
 
             var radio = radioButtons(index);
             element.append(radio);
@@ -143,6 +144,7 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                     var scoreRslt = displayResult(); //if the results needed to be displayed, than it fades in and hides all the buttons.
                     quizdiv.append(scoreRslt).fadeIn();
                     $('#next').remove();
+                    document.getElementById("image-big").src = "images/ideas.png";
                     $('#prev').remove();
                     $('#Inleveren').show();
                     $('#timer').remove();
