@@ -1,6 +1,7 @@
-body{
-    background-color: #f8f8f8 !important; /* verander background color */
-  }
+body {
+    background-color: #f8f8f8 !important;
+    /* verander background color */
+}
 
 .box-vraag {
     background-color: #8FE507;
@@ -9,8 +10,8 @@ body{
     text-align: center;
     margin-top: 3vh;
     width: 75%;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
     border-radius: 25px;
     -webkit-border-radius: 25px;
 }
@@ -21,36 +22,38 @@ body{
     margin-top: 40px;
     min-height: 450px;
     width: 75%;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
     border-radius: 25px;
     -webkit-border-radius: 25px;
 }
+
 .vraag-content {
     padding: 0 auto;
     padding-top: 5px;
-
 }
+
 form {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
-
 }
 
 form label {
     font-family: 'Caecilia LT Std 55 Roman', sans-serif;
     color: #000000;
 }
-.vraag-content h2{ /* verandert het font van de vraag */
+
+.vraag-content h2 {
+    /* verandert het font van de vraag */
     font-weight: normal;
     color: #000000;
     font-family: 'Caecilia LT Std 85 Heavy', sans-serif;
 }
+
 #myProgress {
     width: 100%;
-    background-color:white;
-
+    background-color: white;
 }
 
 .btn-glr {
@@ -59,12 +62,13 @@ form label {
     border-color: #8FE507 !important;
 }
 
-#myBar{
+#myBar {
     height: 30px;
     color: white;
     background-color: #8FE507 !important;
-    border-color: #8FE507 !important; 
+    border-color: #8FE507 !important;
 }
+
 
 /*#Inleveren{
     font-family: sans-serif;
@@ -80,58 +84,63 @@ form label {
 #Inleveren:hover{
     background-color: #3a8;
 }*/
-ul 
-{
+
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     width: 500px;
 }
-ul li
-{
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+
+ul li {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
     /*border-radius: 25px; */
     background: #cfe09b;
     width: 200px;
     margin: 10px;
     padding: 10px;
-    display: inline-block; 
+    display: inline-block;
     color: #3c3c3b;
 }
-#start 
-{
-    display:none;
+
+#start {
+    display: none;
     width: 100px;
 }
-input[type="radio"]{
+
+input[type="radio"] {
     cursor: pointer;
 }
+
 #question-question {
     margin-top: -1px;
     padding-bottom: 1px;
 }
+
 #question-titel {
     padding-top: 3px;
 }
+
 .btn-glr a {
     color: white;
     text-decoration: none;
 }
+
 .btn-glr a:hover {
     color: #3c3c3b;
     text-decoration: none;
 }
+
 .box-formulier-container {
     padding: 15px;
     padding-top: 50px;
 }
+
 #image-big {
     padding-top: 30px;
 }
-#timer{
-    color: #8FE507; 
-}
-#Klaar{
+
+#timer {
     color: #8FE507;
 }
