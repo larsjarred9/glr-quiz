@@ -39,7 +39,13 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                 options: [" Hello World", " Alive and Kicking", " Joe", " Warning Warner"],
                 answer: 0,
                 image: "https://miro.medium.com/max/848/1*e42aZTxR5ZDBbrv-ioIKFA.jpeg"
-            }
+            },
+            {
+                question: "Welk console is van nintendo?",
+                options: [" Wii", " Ps4", " Xbox One", " Sega Genisis", " Neo Geo", " Nvidea Shield"],
+                answer: 0,
+                image: "https://i.ytimg.com/vi/bw-ThW5TfZU/maxresdefault.jpg"
+            },
         ];
 
         //if you are a costumer and you are using this script than take note that to add a question you need to first add a , right after the }
