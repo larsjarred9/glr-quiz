@@ -7,7 +7,7 @@ var myBarWidth = 0;
 var questionsNumber = 4;
 //Set the default time that remains
 //to change the time, then go to the variable timerSetTime and change the time you want to set it
-var timerSetTime = 0.5 // De timer 0.5 = 30 seconden 1 = 60 seconden [1 minuut]
+var timerSetTime = 2; // De timer 0.5 = 30 seconden 1 = 60 seconden [1 minuut]
 var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to calculate a specific number if you want more information about it than ask your local school or education center
 
 (function() //creates the questions and the entire quiz
@@ -227,6 +227,7 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                     $('#timer').remove();
                     var functionloop = true
                     document.getElementById("myBar").style.width = 100 + "%";
+                    document.getElementById("image-big").src = "images/ideas.png";
                     $('#Inleveren').show();
                     displayResult();
 
