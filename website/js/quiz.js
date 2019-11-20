@@ -7,7 +7,7 @@ var myBarWidth = 0;
 var questionsNumber = 4;
 //Set the default time that remains
 //to change the time, then go to the variable timerSetTime and change the time you want to set it
-var timerSetTime = 2; // De timer 0.5 = 30 seconden 1 = 60 seconden [1 minuut]
+var timerSetTime = 0.5; // De timer 0.5 = 30 seconden 1 = 60 seconden [1 minuut]
 var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to calculate a specific number if you want more information about it than ask your local school or education center
 
 (function() //creates the questions and the entire quiz
@@ -70,6 +70,8 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                 alert('Selecteer een antwoord.');
             } else {
                 quesCounter++;
+                $('#next').hide();
+                $('#prev').hide();
                 nextQuestion();
                 addProgress();
             }
@@ -129,6 +131,8 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                     var nextQuestion = createElement(quesCounter); //creates the index to where the quescounter is at right now
                     quizdiv.append(nextQuestion).fadeIn();
                     quizdiv.append
+                    $('#next').show();
+                    $('#prev').show();
                         //fades into the space it will be located to
                     if (!(isNaN(selectOptions[quesCounter]))) //if no option or number has been selected
                     {
