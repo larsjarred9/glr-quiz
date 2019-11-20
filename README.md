@@ -22,11 +22,6 @@ https://pastebin.com/uHcp8iiQ
 
 * Vragen moeten gerandomised worden kwa volgorde
 
-# Known Issues
-* De vraag heeft nog geen fadein en fadeout.
-* Het plaatje heeft nog geen fadein en fadeout.
-
-
 # Huistijl Website
 
 * Tekstkleur: #000000
