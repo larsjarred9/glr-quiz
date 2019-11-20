@@ -7,10 +7,10 @@ var myBarWidth = 0;
 var questionsNumber = 4;
 //Set the default time that remains
 //to change the time, then go to the variable timerSetTime and change the time you want to set it
-var timerSetTime = 0.5; // De timer 0.5 = 30 seconden 1 = 60 seconden [1 minuut]
+var timerSetTime = 5; // De timer 0.5 = 30 seconden 1 = 60 seconden [1 minuut]
 var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to calculate a specific number if you want more information about it than ask your local school or education center
 
-(function() //creates the questions and the entire quiz
+(function() //creates the questions and the entire quiz //this is what we call the holy function of the quiz.js.
     {
         var allQuestions = [{ // Vul hier je vragen in (0 = 1, 1 = 2)
                 question: "Wat betekend HTML?",
@@ -69,6 +69,8 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
             if (isNaN(selectOptions[quesCounter])) {
                 alert('Selecteer een antwoord.');
             } else {
+                // var randomquestion = shuffle([allQuestions.length+1]);
+                // quesCounter = randomquestion;    // first random number from array
                 quesCounter++;
                 $('#next').hide();
                 $('#prev').hide();
@@ -84,6 +86,8 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
         $('#prev').click(function() {
             chooseOption();
             quesCounter--;
+            $('#next').hide();
+            $('#prev').hide();
             deductProgress();
             nextQuestion();
         });
@@ -250,4 +254,12 @@ var normeringsnorm = 1; // Minimaal 1 //minimum 1 //Normeringsnorm is a way to c
                 display = document.querySelector('#time');
             startTimer(Minutes, display);
         }
+        //randomizer. this shuffels the array of questions that have been added to make sure that the questions appear random. Lenght+1 is needed to make sure that a new value is assigned in order to make a new question
+        // function shuffle(array) {
+
+        //     var lenght = array.lenght;
+
+        //     return array.splice(Math.floor(Math.random() * lenght+1));
+        // Sadly, the code for making a randomizer does not work in this facillity.
+        // }
     })();
