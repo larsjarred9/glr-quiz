@@ -1,53 +1,16 @@
-## Beroeps 1 Quiz
-Een project van 4 lesweken (Regio Rotterdam)
+# Beroeps 1 Quiz
+A 4 week long project, we recieved an 8 for it.
 
+## Todo
+- Randomize the question.
+- Fix a bug where some correct questions are incorect while they are correct.
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?BB56EB126497499D3EA4926F080398222B64
-https://pastebin.com/uHcp8iiQ
+## Donate
+It is currently not possible to donate to this project, contributing however is the best donation there is.
 
-# Vragen
+## Live Preview
+https://larsjarred9.github.io/Quiz-Beroeps1/website/index.html
 
-*	Wat is het onderwerp?
-*	Moet de quiz tijdgebonden zijn?
-*	Moet de kaanmakelant de vragen zelf kunnen? (Indien niet welke vragen)
-*	Moet de quiz meerkeuze zijn of open of beiden?
-*	Moet er een Progressbar zijn?
-*	Hoe moet de Score op het scherm gepresenteerd worden?
-*	Welke kleuren worden er gebruikt als branding? (HEX kleuren)
-*	Op welke browsers moet het werken?
-*	Moet het op mobiele telefoons werken?
-*	Moet er ook images of video’s kunnen staan? 
-
-# Eisen
-
-* Vragen moeten gerandomised worden kwa volgorde
-
-# Huistijl Website
-
-* Tekstkleur: #000000
-* Actiekleur: #8FE507
-
-* Headings: 
-  Caecilia LT Std
-  85 heavy
-  Korps: 42 pt
-  interlinie: 51 pt
-  Kleur: #343937
-  Kapitalen
-
-* Sub-Headings
-  Caecilia LT Std
-  85 heavy
-  Korps 18pt
-  Kleur: #343937
-
-* Paragraaf tekst:
-  Verdana
-  Korps: 12pt
-  Kleur: #343937
-  Linkslijnend
-  tekst: Verdana
-  korps: 12pt
-  
- * Achtergrond-kleur:
-   #8FE507
+### Licensed under GNU 3 with some exceptions
+https://www.gnu.org/licenses/gpl-3.0.en.html
+http://www.gnu.org/philosophy/selling-exceptions.en.html (Non-Commercial Usage)
