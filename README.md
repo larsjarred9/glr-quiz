@@ -1,5 +1,5 @@
 # Beroeps 1 Quiz
-A 4 week long project, we recieved an 8 for it. (Basiclly an A)
+A 4 week long project, we recieved an 8 for it. (Basiclly an A) (And just ignore the Documenten folder)
 
 ## Todo
 - Randomize the question.
